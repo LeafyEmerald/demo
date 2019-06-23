@@ -11,11 +11,11 @@ import json
 scope = ['https://spreadsheets.google.com/feeds',
 'https://www.googleapis.com/auth/drive']
 
-credentials = ServiceAccountCredentials.from_json_keyfile_name('Project Katsuki-42ad85cb5253.json', scope)
+credentials = ServiceAccountCredentials.from_json_keyfile_name('your-file-here.json', scope)
 
 gc = gspread.authorize(credentials)
 
-sh = gc.open('Conservative_Whip Sheet_FOR_TESTING')
+sh = gc.open('your-sheet-here')
 
 #determines what tab/worksheet we're doing the whole searcing of the data from
 worksheet = sh.get_worksheet(1)
